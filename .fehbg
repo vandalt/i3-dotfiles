@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/vandal/OneDrive/Pictures/sapins.jpg' 
+feh --no-fehbg --bg-fill ~/.background
