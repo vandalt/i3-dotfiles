@@ -1,0 +1,6 @@
+[user]
+	email = thomas.vandal@mail.mcgill.ca
+	name = Thomas Vandal
+
+[filter "remove-pass"]
+clean = "sed -e 's/^password=.*/#password=TODO/'"
