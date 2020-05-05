@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/.background
+feh --no-fehbg --bg-fill '/home/vandal/.background' 

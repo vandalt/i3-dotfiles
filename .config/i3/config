@@ -216,7 +216,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # wallpaper
-exec_always --no-startup-id feh --bg-fill ~./background
+exec_always --no-startup-id feh --bg-fill ~/.background
 
 # compositing
 exec --no-startup-id xcompmgr -c -f -n
