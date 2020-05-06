@@ -3,7 +3,7 @@ configuration {
 	rofi.modi:         combi,run,drun
 	rofi.width: 	   100
 	rofi.lines: 	   3
-	rofi.padding: 	   1200
+	rofi.padding: 	   600
 	rofi.eh: 	   2
 	rofi.bw: 	   0
 	rofi.hide-scrollbar: true
@@ -13,5 +13,5 @@ configuration {
 	rofi.color-normal: argb:031d1f21, #f3f4f5, argb:031d1f21, argb:031d1f21, #9575cd 
 	rofi.color-urgent: argb:031d1f21, #f3f4f5, argb:bc303541, argb:031d1f21, #9575cd
 	rofi.color-active: argb:031d1f21, #f3f4f5, argb:031d1f21, argb:031d1f21, #9575cd 
-	rofi.font: DejaVu Sans 30
+	rofi.font: DejaVu Sans 20
 }
