@@ -255,8 +255,8 @@ set $urgent-bg-color     #E53935
 bindsym $mod+d exec rofi -show drun -show-icons
 
 # Screenshots
-bindsym Print --release exec "scrot ~/OneDrive/Pictures/Screenshot-$(date +%F_%T).png"
-bindsym Shift+Print --release exec "scrot -s ~/OneDrive/Pictures/Screenshot-$(date +%F_%T).png"
+bindsym Print --release exec "scrot ~/XDG_PICTURES_DIR/Screenshot-$(date +%F_%T).png"
+bindsym Shift+Print --release exec "scrot -s ~/XDG_PICTURES_DIR/Screenshot-$(date +%F_%T).png"
 bindsym Control+Print --release exec "scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 bindsym Control+Shift+Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 
