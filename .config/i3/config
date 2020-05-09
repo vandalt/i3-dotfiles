@@ -162,6 +162,8 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
+for_window [class="matplotlib"] floating enable
+for_window [class="zoom"] floating enable
 
 # assign workspaces to monitors
 workspace $ws1 output eDP1 HDMI1 
