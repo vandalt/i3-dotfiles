@@ -23,5 +23,8 @@ fi
 # For NVM
 source /usr/share/nvm/init-nvm.sh
 
+# For termite to work properly
+TERM=xterm-color
+
 # Alias for dotfiles git
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
