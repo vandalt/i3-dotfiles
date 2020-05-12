@@ -8,9 +8,6 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-# For termite to work properly
-TERM=xterm-color
-
 export QT_QPA_PLATFORMTHEME=gtk2
 
 # >>> conda initialize >>>
