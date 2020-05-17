@@ -167,6 +167,7 @@ for_window [class="Blueman-manager"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
 for_window [class="matplotlib"] floating enable
 for_window [class="zoom"] floating enable
+for_window [class="Safeeyes"] floating enable
 
 # assign workspaces to monitors
 workspace $ws1 output eDP1 HDMI1 
@@ -280,7 +281,7 @@ bar {
 	modifier none
 	strip_workspace_numbers yes
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
-    tray_output none
+    # tray_output none
 	colors {
 		background $bg-color
 	    	separator #757575
