@@ -110,7 +110,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+d focus child
 
 # focus following mouse
 focus_follows_mouse no
@@ -216,18 +216,20 @@ mode "resize" {
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+        bindsym $mod+g mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+g mode "resize"
 
 # wallpaper
 exec_always --no-startup-id feh --bg-fill ~/.background
 
+# Eye breaks
+exec --no-startup-id safeeyes
+
 # compositing
-exec --no-startup-id xcompmgr -c -f -n
-#exec --no-startup-id xcompmgr -c -n
-#exec --no-startup-id picom
+# exec --no-startup-id xcompmgr -c -f -n
+exec --no-startup-id picom -c -f
 
 # no borders
 default_border pixel 0
@@ -258,13 +260,22 @@ set $urgent-bg-color     #E53935
 
 # start launcher
 #bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show drun -show-icons
+bindsym $mod+r exec rofi -show drun -show-icons
+
+# application shortcuts
+bindsym $mod+i exec brave
+bindsym $mod+m exec thunderbird
+bindsym $mod+n exec joplin-desktop
+bindsym $mod+u exec spotify
+bindsym $mod+c exec slack
+bindsym $mod+p exec okular
+bindsym $mod+y exec thunar
 
 # Screenshots
-bindsym Print --release exec "scrot ~/XDG_PICTURES_DIR/Screenshot-$(date +%F_%T).png"
-bindsym Shift+Print --release exec "scrot -s ~/XDG_PICTURES_DIR/Screenshot-$(date +%F_%T).png"
-bindsym Control+Print --release exec "scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
-bindsym Control+Shift+Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+bindsym Print --release exec --no-startup-id "escrotum"
+bindsym Shift+Print --release exec --no-startup-id "escrotum -s"
+bindsym Control+Print --release exec --no-startup-id "escrotum -C"
+bindsym Control+Shift+Print --release exec --no-startup-id "escrotum -sC"
 
 # window colors
 #                       border              background         text                 indicator
@@ -273,7 +284,7 @@ client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-col
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
 
-bindsym $mod+i bar mode toggle
+bindsym $mod+Shift+i bar mode toggle
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
