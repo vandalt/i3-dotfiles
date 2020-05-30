@@ -270,6 +270,7 @@ bindsym $mod+u exec spotify
 bindsym $mod+c exec slack
 bindsym $mod+p exec okular
 bindsym $mod+y exec thunar
+bindsym $mod+z exec zotero
 
 # Screenshots
 bindsym Print --release exec --no-startup-id "escrotum"

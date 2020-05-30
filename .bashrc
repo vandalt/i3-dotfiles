@@ -28,3 +28,6 @@ TERM=xterm-color
 
 # Alias for dotfiles git
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# For new terminal in same dir
+source /etc/profile.d/vte.sh
