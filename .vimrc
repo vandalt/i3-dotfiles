@@ -81,10 +81,10 @@ syntax on
 
 " Set colorscheme
 syntax enable
-let base16colorspace=256
+" let base16colorspace=256
 " set background=dark
 " colorscheme solarized
-colorscheme base16-nord
+" colorscheme base16-nord
 hi Normal guibg=NONE ctermbg=NONE "Transparent
 
 " Line numbers
