@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# script to create c source file with coment section
+
+# create file
+fpath=$1
+touch $fpath
+
+# append default first line
+cat ~/bin/.ccomments > $fpath
