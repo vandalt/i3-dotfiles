@@ -35,6 +35,7 @@ Plug 'nvie/vim-flake8'
 " Color scheme
 "Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/base16-vim'
+Plug 'arcticicestudio/nord-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -80,11 +81,16 @@ let python_highlight_all=1
 syntax on
 
 " Set colorscheme
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 syntax enable
-" let base16colorspace=256
 " set background=dark
 " colorscheme solarized
-" colorscheme base16-nord
+"colorscheme base16-nord
+colorscheme nord
 hi Normal guibg=NONE ctermbg=NONE "Transparent
 
 " Line numbers
