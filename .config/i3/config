@@ -93,7 +93,7 @@ bindsym $mod+o split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -252,8 +252,8 @@ exec --no-startup-id unclutter
 
 # color variables (from https://github.com/bookercodes/dotfiles/blob/ubuntu/.i3/config)
 # inspired from arc gtk themes
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
+set $bg-color 	         #3b4252
+set $inactive-bg-color   #3b4252
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
@@ -264,11 +264,12 @@ bindsym $mod+r exec rofi -show drun -show-icons
 
 # application shortcuts
 bindsym $mod+i exec brave
+bindsym $mod+f exec thunar
 bindsym $mod+m exec thunderbird
 bindsym $mod+n exec joplin-desktop
 bindsym $mod+u exec spotify
 bindsym $mod+c exec slack
-bindsym $mod+p exec okular
+bindsym $mod+p exec env QT_QPA_PLATFORMTHEME=gtk2 okular
 bindsym $mod+y exec thunar
 bindsym $mod+z exec zotero
 

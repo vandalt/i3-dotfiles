@@ -161,6 +161,7 @@ Comment[x-test]=xxUniversal document viewerxx
 Comment[zh_CN]=通用文档查看器
 Comment[zh_TW]=通用文件檢視器
 Exec=env QT_QPA_PLATFORMTHEME=gtk2 okular %U
+StartupWMClass=okular
 Icon=okular
 Type=Application
 InitialPreference=8
