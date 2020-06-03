@@ -251,7 +251,7 @@ exec --no-startup-id udiskie --no-tray
 exec --no-startup-id unclutter
 
 # color variables (from https://github.com/bookercodes/dotfiles/blob/ubuntu/.i3/config)
-# inspired from arc gtk themes
+# inspired from nord gtk themes
 set $bg-color 	         #3b4252
 set $inactive-bg-color   #3b4252
 set $text-color          #f3f4f5
