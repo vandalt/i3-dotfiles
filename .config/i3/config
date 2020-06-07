@@ -118,13 +118,14 @@ focus_follows_mouse no
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
+set $ws2 "2:龜"
+set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5"
 set $ws6 "6"
-set $ws7 "7:"
-set $ws8 "8:"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8:"
 set $ws9 "9:"
 set $ws10 "10:"
 
@@ -153,8 +154,9 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # assign windows to workspaces
-assign [class="Brave-browser"] $ws2
-assign [class="Joplin"] $ws8
+assign [class="firefox"] $ws2
+assign [class="Chromium"] $ws2
+assign [class="Joplin"] $ws3
 assign [class="Thunderbird"] $ws9
 assign [class="Slack"] $ws9
 for_window [class="Spotify"] move to workspace $ws10
@@ -236,7 +238,6 @@ default_border pixel 0
 
 # gaps
 workspace $ws1 gaps inner 15 
-workspace $ws3 gaps inner 15 
 
 # lock to dm
 bindsym $mod+Shift+x exec --no-startup-id "dm-tool lock"
@@ -263,7 +264,7 @@ set $urgent-bg-color     #E53935
 bindsym $mod+r exec rofi -show drun -show-icons
 
 # application shortcuts
-bindsym $mod+i exec brave
+bindsym $mod+i exec firefox
 bindsym $mod+f exec thunar
 bindsym $mod+m exec thunderbird
 bindsym $mod+n exec joplin-desktop
