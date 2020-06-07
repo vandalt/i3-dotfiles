@@ -30,3 +30,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # For new terminal in same dir
 source /etc/profile.d/vte.sh
+
+# Alias for conda astro
+alias condastro='conda activate astro'
