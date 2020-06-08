@@ -4,3 +4,5 @@
 
 [filter "remove-pass"]
 clean = "sed -e 's/^password=.*/#password=TODO/'"
+[pull]
+	rebase = false
