@@ -238,6 +238,7 @@ default_border pixel 0
 
 # gaps
 workspace $ws1 gaps inner 15 
+workspace $ws8 gaps inner 15 
 
 # lock to dm
 bindsym $mod+Shift+x exec --no-startup-id "dm-tool lock"
