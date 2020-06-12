@@ -33,3 +33,9 @@ source /etc/profile.d/vte.sh
 
 # Alias for conda astro
 alias condastro='conda activate astro'
+
+# Onedrive aliases
+alias onestat='systemctl --user status onedrive'
+alias onesync='onedrive --synchronize'
+alias oneresync='onedrive --synchronize --resync'
+alias onemonit='onedrive --monitor'
